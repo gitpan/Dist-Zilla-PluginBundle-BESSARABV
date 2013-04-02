@@ -1,6 +1,6 @@
 package Dist::Zilla::PluginBundle::BESSARABV;
 {
-  $Dist::Zilla::PluginBundle::BESSARABV::VERSION = '0.01';
+  $Dist::Zilla::PluginBundle::BESSARABV::VERSION = '0.02';
 }
 use Moose;
 with 'Dist::Zilla::Role::PluginBundle::Easy';
@@ -15,6 +15,11 @@ sub configure {
 
         # https://metacpan.org/module/Dist::Zilla::Plugin::GithubMeta
         [ 'GithubMeta' => { issues => 1 } ],
+
+        # https://metacpan.org/module/Dist::Zilla::Plugin::CheckChangesHasContent
+        # This is a great thing. It checks that I haven't forgotten to add
+        # info to my Changes file
+        'CheckChangesHasContent',
 
         # From [@Basic] - start
         'GatherDir',
@@ -79,11 +84,6 @@ sub configure {
             }
         ],
 
-        # https://metacpan.org/module/Dist::Zilla::Plugin::CheckChangesHasContent
-        # This is a great thing. It checks that I haven't forgotten to add
-        # info to my Changes file
-        'CheckChangesHasContent',
-
         # Actually ConfirmRelease in in [@Basic], but I've put it here so the
         # dzil asks for my input only in case eveything else is ok
         'ConfirmRelease',
@@ -109,7 +109,7 @@ Dist::Zilla::PluginBundle::BESSARABV - configure Dist::Zilla the way BESSARABV d
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head2 DESCRIPTION
 

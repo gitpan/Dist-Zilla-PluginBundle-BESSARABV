@@ -16,4 +16,4 @@ resources:
   bugtracker: https://github.com/bessarabov/Dist-Zilla-PluginBundle-BESSARABV/issues
   homepage: https://github.com/bessarabov/Dist-Zilla-PluginBundle-BESSARABV
   repository: https://github.com/bessarabov/Dist-Zilla-PluginBundle-BESSARABV.git
-version: 0.01
+version: 0.02
