@@ -1,6 +1,6 @@
 package Dist::Zilla::PluginBundle::BESSARABV;
 {
-  $Dist::Zilla::PluginBundle::BESSARABV::VERSION = '0.02';
+  $Dist::Zilla::PluginBundle::BESSARABV::VERSION = '0.03';
 }
 use Moose;
 with 'Dist::Zilla::Role::PluginBundle::Easy';
@@ -109,9 +109,9 @@ Dist::Zilla::PluginBundle::BESSARABV - configure Dist::Zilla the way BESSARABV d
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
-=head2 DESCRIPTION
+=head1 DESCRIPTION
 
 In my dist.ini:
 

@@ -19,8 +19,15 @@ my %WriteMakefileArgs = (
   "EXE_FILES" => [],
   "LICENSE" => "perl",
   "NAME" => "Dist::Zilla::PluginBundle::BESSARABV",
-  "PREREQ_PM" => {},
-  "VERSION" => "0.02",
+  "PREREQ_PM" => {
+    "Dist::Zilla::Plugin::CheckChangesHasContent" => 0,
+    "Dist::Zilla::Plugin::Git" => 0,
+    "Dist::Zilla::Plugin::Git::ExcludeUntracked" => 0,
+    "Dist::Zilla::Plugin::GithubMeta" => 0,
+    "Dist::Zilla::Plugin::PodWeaver" => 0,
+    "Dist::Zilla::Plugin::RunExtraTests" => 0
+  },
+  "VERSION" => "0.03",
   "test" => {
     "TESTS" => "t/*.t"
   }
