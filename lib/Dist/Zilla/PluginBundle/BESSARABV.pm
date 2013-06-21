@@ -1,6 +1,6 @@
 package Dist::Zilla::PluginBundle::BESSARABV;
 {
-  $Dist::Zilla::PluginBundle::BESSARABV::VERSION = '0.03';
+  $Dist::Zilla::PluginBundle::BESSARABV::VERSION = '0.04';
 }
 use Moose;
 with 'Dist::Zilla::Role::PluginBundle::Easy';
@@ -91,7 +91,7 @@ sub configure {
         # Releaser
 
         # AfterRelease
-        [ 'Git::Tag' => { tag_format => 'v%v', tag_message => '' } ],
+        [ 'Git::Tag' => { tag_format => '%v', tag_message => '' } ],
 
         # TODO - I want to upload new tag to GitHub
     );
@@ -109,7 +109,7 @@ Dist::Zilla::PluginBundle::BESSARABV - configure Dist::Zilla the way BESSARABV d
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 DESCRIPTION
 
