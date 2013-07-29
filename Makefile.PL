@@ -25,10 +25,11 @@ my %WriteMakefileArgs = (
     "Dist::Zilla::Plugin::Git::ExcludeUntracked" => 0,
     "Dist::Zilla::Plugin::GithubMeta" => 0,
     "Dist::Zilla::Plugin::PodWeaver" => 0,
-    "Dist::Zilla::Plugin::RunExtraTests" => 0
+    "Dist::Zilla::Plugin::RunExtraTests" => 0,
+    "Dist::Zilla::Plugin::Test::CPAN::Changes" => 0
   },
   "TEST_REQUIRES" => {},
-  "VERSION" => "0.04",
+  "VERSION" => "1.0.0",
   "test" => {
     "TESTS" => "t/*.t"
   }

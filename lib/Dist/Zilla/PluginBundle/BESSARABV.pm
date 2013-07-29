@@ -1,6 +1,6 @@
 package Dist::Zilla::PluginBundle::BESSARABV;
 {
-  $Dist::Zilla::PluginBundle::BESSARABV::VERSION = '0.04';
+  $Dist::Zilla::PluginBundle::BESSARABV::VERSION = '1.0.0';
 }
 use Moose;
 with 'Dist::Zilla::Role::PluginBundle::Easy';
@@ -42,6 +42,16 @@ sub configure {
         # BeforeBuild
 
         # FileGatherer
+
+        # ## Testing that Changes file is in right format
+        #
+        # I have decided to add this test after [Sergey Romanov's pull
+        # request][mock_person_pr]. And with [the help of Neil
+        # Bowers][changes_dzil_test] I have found this module.
+        #
+        #  [mock_person_pr]: https://github.com/bessarabov/Mock-Person/pull/3
+        #  [changes_dzil_test]: http://questhub.io/realm/perl/quest/51f5f0fa852fe91826000012
+        'Dist::Zilla::Plugin::Test::CPAN::Changes',
 
         # FilePruner
         'Git::ExcludeUntracked',
@@ -109,7 +119,7 @@ Dist::Zilla::PluginBundle::BESSARABV - configure Dist::Zilla the way BESSARABV d
 
 =head1 VERSION
 
-version 0.04
+version 1.0.0
 
 =head1 DESCRIPTION
 
@@ -124,6 +134,10 @@ In my dist.ini:
     version = 0.01
 
     [@BESSARABV]
+
+Dist::Zilla::PluginBundle::BESSARABV uses Semantic Versioning standart for
+version numbers. Please visit L<http://semver.org/> to find out all about this
+great thing.
 
 =head1 AUTHOR
 
