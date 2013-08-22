@@ -29,7 +29,7 @@ my %WriteMakefileArgs = (
     "Dist::Zilla::Plugin::Test::CPAN::Changes" => 0
   },
   "TEST_REQUIRES" => {},
-  "VERSION" => "1.0.0",
+  "VERSION" => "1.0.1",
   "test" => {
     "TESTS" => "t/*.t"
   }

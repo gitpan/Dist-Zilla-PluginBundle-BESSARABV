@@ -1,6 +1,6 @@
 package Dist::Zilla::PluginBundle::BESSARABV;
 {
-  $Dist::Zilla::PluginBundle::BESSARABV::VERSION = '1.0.0';
+  $Dist::Zilla::PluginBundle::BESSARABV::VERSION = '1.0.1';
 }
 use Moose;
 with 'Dist::Zilla::Role::PluginBundle::Easy';
@@ -51,7 +51,7 @@ sub configure {
         #
         #  [mock_person_pr]: https://github.com/bessarabov/Mock-Person/pull/3
         #  [changes_dzil_test]: http://questhub.io/realm/perl/quest/51f5f0fa852fe91826000012
-        'Dist::Zilla::Plugin::Test::CPAN::Changes',
+        'Test::CPAN::Changes',
 
         # FilePruner
         'Git::ExcludeUntracked',
@@ -119,7 +119,7 @@ Dist::Zilla::PluginBundle::BESSARABV - configure Dist::Zilla the way BESSARABV d
 
 =head1 VERSION
 
-version 1.0.0
+version 1.0.1
 
 =head1 DESCRIPTION
 
@@ -138,6 +138,14 @@ In my dist.ini:
 Dist::Zilla::PluginBundle::BESSARABV uses Semantic Versioning standart for
 version numbers. Please visit L<http://semver.org/> to find out all about this
 great thing.
+
+=head1 CONTRIBUTORS
+
+=over 4
+
+=item * Sergey Romanov (SROMANOV)
+
+=back
 
 =head1 AUTHOR
 
